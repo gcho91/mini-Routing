@@ -4,19 +4,18 @@ angular
     $stateProvider
       .state("home", {
         url: "/",
-        templateUrl: "js/home/homeTmpl.html",
+        templateUrl: "./js/home/homeTmpl.html",
         controller: "homeCtrl"
       })
       .state("settings", {
         url: "/settings",
-        templateUrl: "js/settings/settingsTmpl.html",
+        templateUrl: "../js/settings/settingsTmpl.html",
         controller: "settingsCtrl"
       })
       .state("products", {
         url: "/products/:id",
-        templateUrl: "js/products/productTempl.html",
+        templateUrl: "../js/products/productsTmpl.html",
         controller: "productsCtrl"
       });
-
     $urlRouterProvider.otherwise("/");
   });
